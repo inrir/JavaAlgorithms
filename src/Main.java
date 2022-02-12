@@ -1,39 +1,42 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(bf.readLine());
-        //code up 1047 비트연산자 사용하는 방법
-       /* int a = Integer.parseInt(bf.readLine());
-        System.out.println(String.format("%d",a<<1));*/
+//        StringTokenizer st = new StringTokenizer(bf.readLine());
 
-        //code up 1048 ~ 1058
+        int a = Integer.parseInt(bf.readLine());
+
 //        int a = Integer.parseInt(st.nextToken());
 //        int b = Integer.parseInt(st.nextToken());
-//        boolean a = Boolean.valueOf(bf.readLine()).booleanValue();
-        boolean a = (Integer.parseInt(st.nextToken()) == 1);
-        boolean b = (Integer.parseInt(st.nextToken()) == 1);
-//        System.out.println(String.format("%d",a<<b));
-//        System.out.println(String.format("%d", (a>b)? 1:0));
-//        System.out.println(String.format("%d", (a==b)? 1:0));
-//        System.out.println(String.format("%d", (a<=b)? 1:0));
-//        System.out.println(String.format("%d", (a!=b)? 1:0));
-//        System.out.println((a&&b)? 1:0);
+        /* code up 1081
+        int sum = 0, i = 1;
+        while(a>sum){
+            sum += i;
+            i++;
+        }
+        System.out.println(--i);*/
+        /* code up 1082
+        for(int i = 1; i<=a;i++){
+            for(int j = 1; j<=b;j++){
+                System.out.println(i + " " + j);
+            }
+        }*/
+        /* code up 1081
+        for(int i = 0x1; i<=0xF;i++){
+            System.out.printf("%X*%X=%X\n",a,i,a*i);
+        }*/
+        /* code up 1084
+        for(int i = 1; i<=a; i++){
+            if(i%3 == 0) System.out.print("X ");
+            else System.out.print(i + " ");
+        }*/
 
-//        System.out.println((a&&b)? 1:0);
-//        System.out.println((a||b)? 1:0);
-//        System.out.println(((a&&!b)||(!a&&b))? 1:0);
-//        System.out.println((a==b)? 1:0);
-        System.out.println(((a==b)&&(!a))? 1:0);
 
-        //code up 10
 
     }
-
 }
