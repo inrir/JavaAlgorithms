@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 
-public class Main {
+public class codeup1091 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 //        BufferedWriter bo = new BufferedWriter(new OutputStreamWriter(System.out));
